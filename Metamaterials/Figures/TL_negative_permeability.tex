@@ -1,0 +1,35 @@
+\documentclass{standalone}
+
+\usepackage[OT1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{helvet,sfmath}
+\usepackage{siunitx}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc,patterns}
+\usepackage{tikz,tkz-euclide}
+\usepackage{circuitikz}
+
+%% Color %%
+\definecolor{BlueDefault}{rgb}{0.2,0.2,0.7}
+\definecolor{Fr4}{RGB}{228, 188, 65}
+\definecolor{Copper}{RGB}{184, 115, 51}
+
+\begin{document}
+
+\begin{circuitikz}[scale=0.6]
+    \draw
+    (2,0) to[short,o-o] (8,0)
+    (2,3) to[short,o-] (2.5,3) to[inductor] (5.5,3) to[short,-o] (8,3)
+    (7,3) to[capacitor, l=\(\varepsilon_0\)] (7,0)
+    (2.5,4.5) to[inductor, l=\(L_{SRR}\)] (5.5,4.5) to[generic] (5.5,7.5) to[capacitor, l=\(C_{SRR}\)] (2.5,7.5) to (2.5,4.5)
+    (4,2.5) node{\(\mu_0\)}
+    (6.6,6) node{\(R_{SRR}\)}
+    ;
+    \draw[dashed, thick] (3.2,3.8) to (4.8,3.8);
+    \draw[Stealth-Stealth] (3.2,4.2) arc(120:240:0.5);
+    \draw (2.5,3.8) node{\(M\)};
+\end{circuitikz}
+
+\end{document}
+

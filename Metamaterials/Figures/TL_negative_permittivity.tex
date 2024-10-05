@@ -1,0 +1,30 @@
+\documentclass{standalone}
+
+\usepackage[OT1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{helvet,sfmath}
+\usepackage{siunitx}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc,patterns}
+\usepackage{tikz,tkz-euclide}
+\usepackage{circuitikz}
+
+%% Color %%
+\definecolor{BlueDefault}{rgb}{0.2,0.2,0.7}
+\definecolor{Fr4}{RGB}{228, 188, 65}
+\definecolor{Copper}{RGB}{184, 115, 51}
+
+\begin{document}
+
+\begin{circuitikz}[scale=0.6]
+    \draw
+    (0,0) to[short,o-o] (11,0)
+    (0,6) to[short,o-] (1,6) to[inductor, l=\(\mu_0\)] (7,6) to[short,-o] (11,6)
+    (7.5,6) to[capacitor, l=\(\varepsilon_0\)] (7.5,0)
+    (9.5,6) to[inductor, l=\(L_K\)] (9.5,3) to[generic, l=\(R\)] (9.5,0)
+    ;
+\end{circuitikz}
+
+\end{document}
+
