@@ -1,0 +1,21 @@
+\documentclass{standalone}
+
+\usepackage[OT1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{helvet,sfmath}
+\usepackage{siunitx}
+
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usetikzlibrary{arrows,calc,patterns}
+\usepackage{tikz,tkz-euclide}
+
+\definecolor{BlueDefault}{rgb}{0.2,0.2,0.7}
+
+\begin{document}
+
+\begin{circuitikz}[scale=0.7]
+    \draw (0,3) to[inductor, l=$L_K$, o-] (3,3) to[generic, l=$R$, -o] (6,3);        
+\end{circuitikz}
+
+\end{document}

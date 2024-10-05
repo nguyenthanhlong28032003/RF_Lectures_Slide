@@ -1,0 +1,49 @@
+\subsection{Maxwell's equations}
+
+\begin{frame}{Maxwell's equations}
+\vspace{-4mm}
+\begin{columns}
+    \column{0.5\textwidth}
+    \begin{itemize}
+        \item \( \mathbf{D} = \varepsilon \mathbf{E} \).
+    \end{itemize}
+    
+    \column{0.5\textwidth}
+    \begin{itemize}
+        \item \( \mathbf{B} = \mu \mathbf{H} \).
+    \end{itemize}
+
+\end{columns}
+
+{\scriptsize
+
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+        & Electric fields  & Magnetic fields \\
+        \hline
+        & & \\
+        & \textbf{Maxwell - Gauss} & \textbf{Maxwell - Gauss} \\
+        & & \\
+        Flux & \( \nabla \cdot \mathbf{D} = \rho \) & \( \nabla \cdot \mathbf{B} = 0 \) \\
+        & & \\
+        & \( \oiint_S \mathbf{D} \cdot \mathrm{d} \mathbf{S} = \iiint \rho \mathrm{d}V \) & \( \oiint_S \mathbf{B} \cdot \mathrm{d} \mathbf{S} = 0 \) \\
+        & & \\
+        \hline
+        & & \\
+        & \textbf{Maxwell - Faraday} & \textbf{Maxwell - Ampere} \\
+        & & \\
+        Circulation & \( \nabla \times \mathbf{E} = - \dfrac{\partial \mathbf{B} }{\partial t} \) & \( \nabla \times \mathbf{H} = \mathbf{j} + \dfrac{\partial \mathbf{D} }{\partial t} \) \\
+        & & \\
+        & \( \oint \mathbf{E} \mathrm{d} \mathbf{l} = - \iint_S \left( \dfrac{\partial \mathbf{B} }{\partial t} \right) \cdot \mathrm{d} \mathbf{S} \) & \( \oint \mathbf{H} \cdot \mathrm{d} \mathbf{l} = \iint_S \mathbf{j} \cdot \mathrm{d} \mathbf{S} + \iint_S \left( \dfrac{\partial \mathbf{D} }{\partial t} \right) \cdot \mathrm{d} \mathbf{S} \) \\
+        & & \\
+        \hline
+    \end{tabular}
+    \caption{The four Maxwell's equations.}
+    \label{Maxwell's_Equations}
+\end{table}
+
+}
+
+\end{frame}

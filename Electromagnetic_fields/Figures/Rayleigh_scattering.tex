@@ -1,0 +1,76 @@
+\documentclass{standalone}
+
+\usepackage[OT1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{helvet,sfmath}
+\usepackage{siunitx}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc,patterns}
+\usepackage{tikz,tkz-euclide}
+
+\definecolor{BlueDefault}{rgb}{0.2,0.2,0.7}
+
+\begin{document}
+
+\begin{tikzpicture}
+    %%Nanosphere
+    \draw[draw = none, fill = lightgray] (-0.2,0) circle (2.2);
+    \draw[draw = none, fill = lightgray] (0.2,0) circle (2.2);
+    %%dipole
+    \draw[fill = black] (-0.2,0) circle (0.05);
+    \draw[fill = black] (0.2,0) circle (0.05);
+    \draw[thick, -Stealth] (-0.2,0) to (0.2,0);
+    \draw
+    (0.3,0) node[below]{\(O^+\)}
+    (-0.3,0) node[below]{\(O^-\)}
+    (0,0) node[above]{\(\mathbf{P}\)}
+    ;
+    \draw
+    (2.20,0.00) node{\(+\)}
+    (2.17,0.35) node{\(+\)}
+    (2.08,0.68) node{\(+\)}
+    (1.93,1.00) node{\(+\)}
+    (1.73,1.29) node{\(+\)}
+    (1.49,1.53) node{\(+\)}
+    (1.20,1.73) node{\(+\)}
+    (0.88,1.88) node{\(+\)}
+    (0.55,1.97) node{\(+\)}
+    (0.20,2.00) node{\(+\)}
+    (2.17,-0.35) node{\(+\)}
+    (2.08,-0.68) node{\(+\)}
+    (1.93,-1.00) node{\(+\)}
+    (1.73,-1.29) node{\(+\)}
+    (1.49,-1.53) node{\(+\)}
+    (1.20,-1.73) node{\(+\)}
+    (0.88,-1.88) node{\(+\)}
+    (0.55,-1.97) node{\(+\)}
+    (0.20,-2.00) node{\(+\)}
+    ;
+    \draw
+    (-2.20,0.00) node{\(-\)}
+    (-2.17,0.35) node{\(-\)}
+    (-2.08,0.68) node{\(-\)}
+    (-1.93,1.00) node{\(-\)}
+    (-1.73,1.29) node{\(-\)}
+    (-1.49,1.53) node{\(-\)}
+    (-1.20,1.73) node{\(-\)}
+    (-0.88,1.88) node{\(-\)}
+    (-0.55,1.97) node{\(-\)}
+    (-0.20,2.00) node{\(-\)}
+    (-2.17,-0.35) node{\(-\)}
+    (-2.08,-0.68) node{\(-\)}
+    (-1.93,-1.00) node{\(-\)}
+    (-1.73,-1.29) node{\(-\)}
+    (-1.49,-1.53) node{\(-\)}
+    (-1.20,-1.73) node{\(-\)}
+    (-0.88,-1.88) node{\(-\)}
+    (-0.55,-1.97) node{\(-\)}
+    (-0.20,-2.00) node{\(-\)}
+    ;
+    %Electric fields
+    \draw[thick, -Stealth] (-2.5,-2.5) to (2.5,-2.5);
+    \draw (0,-2.8) node{\( \mathbf{E} = \mathbf{E}_0 \cos \left( \omega t \right) \)};
+\end{tikzpicture}
+
+\end{document}

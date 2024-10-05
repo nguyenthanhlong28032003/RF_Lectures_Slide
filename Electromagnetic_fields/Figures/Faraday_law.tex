@@ -1,0 +1,99 @@
+\documentclass{standalone}
+
+\usepackage[OT1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{helvet,sfmath}
+\usepackage{siunitx}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc,patterns}
+\usepackage{tikz,tkz-euclide}
+
+\definecolor{BlueDefault}{rgb}{0.2,0.2,0.7}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=0.6]
+    \draw[fill = lightgray] (0,0) circle (1.8);
+    \draw[-Stealth, thick] (2,0) arc (0:360:2);
+    \draw (2.3,1) node{\(\mathcal{E}\)};
+    \draw[fill = white]
+    %Layout 0
+    (-1.5,0.0) circle (0.2)
+    (-1.0,0.0) circle (0.2)
+    (-0.5,0.0) circle (0.2)
+    (0.0,0.0) circle (0.2)
+    (0.5,0.0) circle (0.2)
+    (1.0,0.0) circle (0.2)
+    (1.5,0.0) circle (0.2)
+    %Layout 1
+    % (-1.0,1.0) circle (0.2)
+    (-0.5,1.0) circle (0.2)
+    (0.0,1.0) circle (0.2)
+    (0.5,1.0) circle (0.2)
+    % (1.0,1.0) circle (0.2)
+    %Layout -1
+    % (-1.0,-1.0) circle (0.2)
+    (-0.5,-1.0) circle (0.2)
+    (0.0,-1.0) circle (0.2)
+    (0.5,-1.0) circle (0.2)
+    % (1.0,-1.0) circle (0.2)
+    %Layour 0.5
+    (-1.0,0.5) circle (0.2)
+    (-0.5,0.5) circle (0.2)
+    (0.0,0.5) circle (0.2)
+    (0.5,0.5) circle (0.2)
+    (1.0,0.5) circle (0.2)
+    %Layour -0.5
+    (-1.0,-0.5) circle (0.2)
+    (-0.5,-0.5) circle (0.2)
+    (0.0,-0.5) circle (0.2)
+    (0.5,-0.5) circle (0.2)
+    (1.0,-0.5) circle (0.2)
+    %Layout 1.5
+    (0,1.5) circle (0.2)
+    %Layout -1.5
+    (0,-1.5) circle (0.2)
+    ;
+    \draw[fill = black]
+    %Layout 0
+    (-1.5,0.0) circle (0.1)
+    (-1.0,0.0) circle (0.1)
+    (-0.5,0.0) circle (0.1)
+    (0.0,0.0) circle (0.1)
+    (0.5,0.0) circle (0.1)
+    (1.0,0.0) circle (0.1)
+    (1.5,0.0) circle (0.1)
+    %Layout 1
+    % (-1.0,1.0) circle (0.1)
+    (-0.5,1.0) circle (0.1)
+    (0.0,1.0) circle (0.1)
+    (0.5,1.0) circle (0.1)
+    % (1.0,1.0) circle (0.1)
+    %Layout -1
+    % (-1.0,-1.0) circle (0.1)
+    (-0.5,-1.0) circle (0.1)
+    (0.0,-1.0) circle (0.1)
+    (0.5,-1.0) circle (0.1)
+    % (1.0,-1.0) circle (0.1)
+    %Layour 0.5
+    (-1.0,0.5) circle (0.1)
+    (-0.5,0.5) circle (0.1)
+    (0.0,0.5) circle (0.1)
+    (0.5,0.5) circle (0.1)
+    (1.0,0.5) circle (0.1)
+    %Layour -0.5
+    (-1.0,-0.5) circle (0.1)
+    (-0.5,-0.5) circle (0.1)
+    (0.0,-0.5) circle (0.1)
+    (0.5,-0.5) circle (0.1)
+    (1.0,-0.5) circle (0.1)
+    %Layout 1.5
+    (0,1.5) circle (0.1)
+    %Layout -1.5
+    (0,-1.5) circle (0.1)
+    ;
+    \draw (-2.3,-1.7) node{\( \mathbf{B} \downarrow \)};
+\end{tikzpicture}
+
+\end{document}

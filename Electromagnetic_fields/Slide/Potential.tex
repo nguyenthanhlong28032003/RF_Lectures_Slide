@@ -1,0 +1,38 @@
+\subsection{Potential Electromagnetic}
+
+\begin{frame}{Potential Electromagnetic}
+    \begin{columns}
+        \column{0.5\textwidth}
+        3 Potential:
+        \begin{itemize}
+            \item Scalar potential: \( \phi \).
+            \item Vector potential: \( \mathbf{A} \).
+            \item Hertz vector potential: \( \mathbf{\Pi}_e \ \& \ \mathbf{\Pi}_m\).
+        \end{itemize}
+
+        Properties:
+        \begin{align*}
+            &\Box \phi = \dfrac{\rho}{\epsilon_0}, \\
+            &\Box \mathbf{A} = \mu_0 \mathbf{j},
+        \end{align*}
+        where \( \Box = \frac{1}{c^2} \frac{\partial^2}{\partial t^2} - \nabla^2 \).
+        
+        \column{0,5\textwidth}
+
+        Define:
+        \vspace{-4mm}
+        \begin{align*}
+            & \mathbf{E} = - \nabla \phi - \dfrac{1}{c} \dfrac{\partial \mathbf{A}}{\partial t}. \\
+            & \mathbf{B} = \nabla \times \mathbf{A}. \\
+            & \nabla \cdot \mathbf{A} + \mu \varepsilon \dfrac{\partial \phi}{\partial t} = 0.
+        \end{align*}
+
+        \begin{align*}
+            & \phi (\mathbf{r}, t) = \frac{1}{4 \pi \epsilon_0} \int \mathrm{d}^3 x^\prime \frac{\rho\left( \mathbf{r}^\prime, t_r\right)}{ \left| \mathbf{r} - \mathbf{r}^\prime \right|}, \\
+            & \mathbf A (\mathbf{r}, t) = \frac{\mu_0}{4 \pi} \int \mathrm{d}^3 x^\prime \frac{\mathbf{j}\left( \mathbf{r}^\prime, t_r\right)}{ \left| \mathbf{r} - \mathbf{r}^\prime \right|},
+        \end{align*}
+        where \( t_r = t - \frac{\left|\mathbf{r} - \mathbf{r}'\right|}{c} \).
+    \end{columns}
+
+
+\end{frame}

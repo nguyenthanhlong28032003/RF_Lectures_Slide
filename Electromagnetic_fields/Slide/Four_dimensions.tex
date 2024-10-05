@@ -1,0 +1,24 @@
+\subsection{Four dimensions}
+
+\begin{frame}{Four dimensions}
+    Electromagnetic four-potential: \( A^\alpha = \left( \dfrac{1}{c} \phi, \mathbf{A} \right) \). \cite{Jackson_1998} \\
+    Four-current \( \mathbf{j}^\alpha = ( c \rho, \mathbf{j} ) \).
+    \begin{equation*}
+        F^{\mu\nu} = \partial^{\mu}A^{\nu} - \partial^{\nu}A^{\mu} =
+        \begin{bmatrix}
+                0   & -E_x/c & -E_y/c & -E_z/c \\
+                E_x/c &    0   & -B_z   &  B_y   \\
+                E_y/c &  B_z   &    0   & -B_x   \\
+                E_z/c & -B_y   &  B_x   &  0
+        \end{bmatrix}
+        .
+    \end{equation*}
+
+    Maxwell Equations:
+    \begin{align*}
+        & \Box A^\alpha = \mu_0 J^\alpha, \\
+        & \partial_\alpha F^{\alpha\beta} = \mu_0 J^\beta.
+    \end{align*}
+    where \( \Box = \partial^\alpha \partial_\alpha \).
+    
+\end{frame}
