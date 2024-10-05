@@ -1,0 +1,18 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{tikz}
+\usepgfplotslibrary{polar}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{polaraxis}[
+    xticklabel=$\pgfmathprintnumber{\tick}^\circ$,
+    xtick={0,30,...,330},
+    ytick={0.2,0.4,...,0.8},
+    ymin=0, ymax=1
+]
+\addplot[mark=none, blue] table[col sep=comma, x expr=deg(\thisrow{Theta}), y=RadiationIntensity]{radiation_pattern.csv};
+\end{polaraxis}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,26 @@
+\documentclass{standalone}
+
+\usepackage[OT1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{helvet,sfmath}
+\usepackage{siunitx}
+
+\usepackage{tikz}
+\usepackage{circuitikz}
+
+\definecolor{BlueDefault}{rgb}{0.2,0.2,0.7}
+
+\begin{document}
+
+\begin{circuitikz}[scale=0.6]
+    \draw (-1,3) to[short,o-] (0,3) to[generic, l=\(R_0\)] (3,3) to[generic] (3,0) to[inductor, l=\(X_0\)] (0,0) to[short, -o] (-1,0); 
+    \draw (2.2,1.5) node{\(R_r\)};
+    \draw[-Stealth] (3.6,1.5) to (4.2,1.5);
+    \draw[-Stealth] (3.5,1.9) to (4.0,2.1);
+    \draw[-Stealth] (3.5,1.1) to (4.0,0.9);
+    \draw[-Stealth] (3.4,2.2) to (3.8,2.6);
+    \draw[-Stealth] (3.4,0.8) to (3.8,0.4);
+\end{circuitikz}
+
+\end{document}
+

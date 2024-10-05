@@ -1,0 +1,27 @@
+\begin{frame}{Frequency domain}
+    \begin{itemize}
+        \item Fourier series: \( S(t) = \sum_{i=-\infty}^\infty s_i \exp \left( i \omega t \right). \)
+        \item Time domain transform to frequency domain:
+    \end{itemize}
+    \vspace{3mm}
+    \begin{tikzpicture}[scale=1]
+        \draw 
+        (-4,0) node{Time domain}
+        (4,0) node{Frequency domain}
+        (-4,-1) node{\( \dfrac{\partial }{\partial t} \)}
+        (4,-1) node{\( j \omega \)}
+        (-4,-2) node{\(x = x_0 \cos( \omega t + \varphi ) \)}
+        (4,-2) node{\( x = x_0 \exp ( j \varphi ) \)}
+        (4,-2.5) node{(Ignore \(\exp(j \omega t ) \) )}
+        (0,0.4) node{Fourier transform}
+        % (0,-0.6) node{Fourier transform}
+        ;
+        \draw[thick, -Stealth] (-2,0) to (2,0);
+        \draw[thick, -Stealth] (-2,-1) to (2,-1);
+        \draw[thick, -Stealth] (-2,-2) to (2,-2);
+    \end{tikzpicture}
+    \vspace{1mm}
+    
+    \textbf{Frequency is only continuous in the mindset of engineering, not mathematics and machinery. }
+    
+\end{frame}

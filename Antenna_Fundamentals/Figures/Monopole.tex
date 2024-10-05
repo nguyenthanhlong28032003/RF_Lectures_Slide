@@ -1,0 +1,30 @@
+\documentclass{standalone}
+
+\usepackage[OT1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{helvet,sfmath}
+\usepackage{siunitx}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc,patterns}
+\usepackage{tikz,tkz-euclide}
+
+
+\definecolor{BlueDefault}{rgb}{0.2,0.2,0.7}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=0.6]
+    %% Ground
+    \draw[very thick] (0,0) to (8,0);
+    \draw[draw=none, fill=lightgray] (0,0) to (8,0) to (8,-0.5) to (0,-0.5) to (0,0);
+    \draw (7.0,-0.25) node{\(\sigma = \infty \)};
+    %% Antenna
+    \draw[thick, -Stealth] (1,0.7) to (2,0.7);
+    \draw[thick, -Stealth] (2,0.7) to (2,3);
+    \draw[dashed, thick, Stealth-] (1,-0.7) to (2,-0.7);
+    \draw[dashed, thick, Stealth-] (2,-0.7) to (2,-3);
+    
+\end{tikzpicture}    
+
+\end{document}
